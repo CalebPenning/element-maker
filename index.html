@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Element Maker</title>
+	</head>
+	<body>
+		<header id="intro">
+			<h1>Welcome to Element Maker!</h1>
+			<p>
+				Here you can add a bunch of elements to the document body to see the
+				differences in their standard styling by browser
+			</p>
+			<p>
+				To get started, enter any valid tag name (e.g. div or h1,
+				case-insensitive) into the input below and submit!
+			</p>
+		</header>
+		<main>
+			<form id="element-form">
+				<label for="tag-input">Enter a Tag Name</label>
+				<input type="text" id="tag-input" minlength="1" />
+				<label for="tag-content">Enter Tag Contents</label>
+				<input type="text" id="tag-content" minlength="1" />
+				<label for="tag-src"
+					>If adding an img tag, add the src attribute here.</label
+				>
+				<input type="text" id="tag-src" />
+				<input type="submit" value="Submit" />
+			</form>
+		</main>
+		<section id="output"></section>
+		<script src="app.js"></script>
+	</body>
+</html>
